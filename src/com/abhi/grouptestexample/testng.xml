@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- <suite name="Fourth Suite">
+	<test name="Test1">
+		<groups>
+			<run>
+				<include name="functest" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.abhi.grouptestexample.GroupTestExample" />
+		</classes>
+	</test>
+</suite> -->
+
+<suite name="Fifth Suite">
+	<test name="Test1">
+
+		<groups>
+
+			<define name="all">
+				<include name="functest" />
+				<include name="checkintest" />
+			</define>
+
+			<run>
+				<include name="all" />
+			</run>
+
+		</groups>
+
+		<classes>
+			<class name="com.abhi.grouptestexample.GroupTestExample" />
+		</classes>
+
+	</test>
+</suite>
